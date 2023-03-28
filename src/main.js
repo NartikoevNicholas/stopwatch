@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import main from './assets/main.css';
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app 
+    .use(main)
+    .mount('#app')
